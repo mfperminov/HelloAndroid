@@ -1,66 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="start"
-        android:background="#d3d3d3"
-        tools:context="com.udacity.helloandroid.MainActivity">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context="com.udacity.helloandroid.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/Logo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/udacity"
-        android:paddingBottom="20dp"
         android:layout_weight="2"
-        />
+        android:paddingBottom="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_weight="1"
         android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#d3d3d3"
         android:gravity="start"
-        android:orientation="vertical"
-        android:background="#d3d3d3">
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/businessname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="Udacity"
-            android:textSize="24sp"
             android:layout_marginBottom="10dp"
-            />
+            android:layout_marginStart="40dp"
+            android:text="@string/tv_udacity"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="2465 Latham St Mountain View, CA 94043"
-            android:textSize="16sp"
             android:layout_marginBottom="10dp"
-            />
+            android:layout_marginStart="40dp"
+            android:text="@string/address"
+            android:autoLink="map"
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/website"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="udacity.com"
-            android:textSize="20sp"
             android:layout_marginBottom="10dp"
-            />
+            android:layout_marginStart="40dp"
+            android:text="@string/www"
+            android:autoLink="web"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="650-555-5555"
+            android:layout_marginStart="40dp"
+            android:text="@string/phone"
+            android:autoLink="phone"
             android:textSize="20sp" />
 
     </LinearLayout>
